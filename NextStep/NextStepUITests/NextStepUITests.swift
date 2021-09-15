@@ -1,13 +1,13 @@
 //
-//  BasicSampleUITests.swift
-//  BasicSampleUITests
+//  NextStepUITests.swift
+//  NextStepUITests
 //
-//  Created by Jaemin Lee on 2021/07/05.
+//  Created by Jaemin Lee on 2021/09/15.
 //
 
 import XCTest
 
-class BasicSampleUITests: XCTestCase {
+class NextStepUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

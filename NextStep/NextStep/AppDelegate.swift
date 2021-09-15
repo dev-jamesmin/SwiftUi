@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  BasicSample
+//  NextStep
 //
-//  Created by Jaemin Lee on 2021/07/05.
+//  Created by Jaemin Lee on 2021/09/15.
 //
 
 import UIKit
