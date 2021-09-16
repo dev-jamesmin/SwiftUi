@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var touchedCount = 0
     var body: some View {
         NavigationView{
           Form{
-           Text("Hello World")
+            Text("버튼을 클릭한 횟수 \(touchedCount)")
+            Button("this is Button"){
+//                self.touchedCount += 1
+                self.touchedCount = self.touchedCount + 1
+            }
             Group{
                Text("Hello World")
                Text("Hello World")
@@ -28,21 +33,21 @@ struct ContentView: View {
                Text("Hello World")
             }
 
-            Group{
-               Text("Hello World")
-               Text("Hello World")
-               Text("Hello World")
-               Text("Hello World")
-               Text("Hello World")
-            }
-
-            Group{
-               Text("Hello World")
-               Text("Hello World")
-               Text("Hello World")
-               Text("Hello World")
-               Text("Hello World")
-            }
+//            Group{
+//               Text("Hello World")
+//               Text("Hello World")
+//               Text("Hello World")
+//               Text("Hello World")
+//               Text("Hello World")
+//            }
+//
+//            Group{
+//               Text("Hello World")
+//               Text("Hello World")
+//               Text("Hello World")
+//               Text("Hello World")
+//               Text("Hello World")
+//            }
          }.navigationBarTitle("this is title")
         }
     }
