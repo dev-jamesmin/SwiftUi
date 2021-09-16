@@ -9,10 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Form{
-            Text("Hello, world!").padding()
-            Text("Hello World")
-            Text("Hello World")
+        NavigationView{
+          Form{
+           Text("Hello World")
+            Group{
+               Text("Hello World")
+               Text("Hello World")
+               Text("Hello World")
+               Text("Hello World")
+               Text("Hello World")
+            }
 
             Group{
                Text("Hello World")
@@ -21,7 +27,7 @@ struct ContentView: View {
                Text("Hello World")
                Text("Hello World")
             }
-            
+
             Group{
                Text("Hello World")
                Text("Hello World")
@@ -29,7 +35,7 @@ struct ContentView: View {
                Text("Hello World")
                Text("Hello World")
             }
-            
+
             Group{
                Text("Hello World")
                Text("Hello World")
@@ -37,14 +43,7 @@ struct ContentView: View {
                Text("Hello World")
                Text("Hello World")
             }
-            
-            Group{
-               Text("Hello World")
-               Text("Hello World")
-               Text("Hello World")
-               Text("Hello World")
-               Text("Hello World")
-            }
+         }.navigationBarTitle("this is title")
         }
     }
 }
