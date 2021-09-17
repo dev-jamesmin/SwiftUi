@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var touchedCount = 0
+    @State private var touchedCount = 0
+    @State var name = ""
+    @State var age = ""
+//    @State var name = ""
+    
     var body: some View {
         NavigationView{
           Form{
@@ -16,22 +20,19 @@ struct ContentView: View {
             Button("this is Button"){
 //                self.touchedCount += 1
                 self.touchedCount = self.touchedCount + 1
+            }            
+            Section{
+                TextField("이름을 입력해주세요", text: $name)
+                    .keyboardType(.default) //키보드를 기본 키보드로 보여줍니다.
             }
-            Group{
-               Text("Hello World")
-               Text("Hello World")
-               Text("Hello World")
-               Text("Hello World")
-               Text("Hello World")
+            Section{
+                TextField("나이를 입력해주세요", text: $age)
+                    .keyboardType(.numberPad) // number형식의 키보드를 보여줍니다.
             }
-
-            Group{
-               Text("Hello World")
-               Text("Hello World")
-               Text("Hello World")
-               Text("Hello World")
-               Text("Hello World")
+            Section{
+                Text("\(name)님의 나이는 \(age)살입니다. ")
             }
+            
 
 //            Group{
 //               Text("Hello World")
