@@ -1,17 +1,15 @@
 //
 //  ContentView.swift
-//  HelloWorld
+//  Shared
 //
-//  Created by Jaemin Lee on 2021/07/05.
+//  Created by Jaemin Lee on 2021/10/18.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!~")
-            .font(.headline)
-            .foregroundColor(Color.red)
+        Text("Hello, world!")
             .padding()
     }
 }
